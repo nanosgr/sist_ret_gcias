@@ -1,0 +1,7 @@
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:root@192.168.24.121/test"
+# SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
+# SQLALCHEMY_DATABASE_URL = "postgresql://sebastian:Micaela$1991@localhost/test"
+
+# engine = create_engine(
+#     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
+# )

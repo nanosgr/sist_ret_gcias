@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Cuil">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9_]{11}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Empleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Empleado" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre" type="xs:string" maxOccurs="1" minOccurs="1" />
+              <xs:element name="Cuil" type="Cuil" maxOccurs="1" minOccurs="1" />
+              <xs:element name="RemuneracionBruta" type="xs:decimal" maxOccurs="1" minOccurs="1" />
+              <xs:element name="SueldoBasico" type="xs:decimal" maxOccurs="1" nillable="true" />
+              <xs:element name="Sexo" type="sexo">
+              </xs:element>
+              <xs:element name="NroDoc" type="nro_doc">
+              </xs:element>
+              <xs:element name="TipDoc" type="tip_doc" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="myCuil">
+      <xs:selector xpath="./Empleado" />
+      <xs:field xpath="Cuil" />
+    </xs:unique>
+  </xs:element>
+  <xs:simpleType name="nro_doc">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9_]{8}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sexo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[MF]" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tip_doc">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="DU|LE|CI|LC|PA|EX" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

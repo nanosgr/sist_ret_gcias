@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2022</periodo>
+	<nroPresentacion>1</nroPresentacion>
+	<fechaPresentacion>2023-03-15</fechaPresentacion>
+	<empleado>
+		<cuit>20188548092</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>FUKS</apellido>
+		<nombre>PABLO FEDERICO</nombre>
+		<direccion>
+			<provincia>12</provincia>
+			<cp>2000</cp>
+			<localidad>ROSARIO SUD</localidad>
+			<calle>BUENOS AIRES</calle>
+			<nro>1262</nro>
+			<piso>9</piso>
+			<dpto>1</dpto>
+		</direccion>
+	</empleado>
+	<cargasFamilia>
+		<cargaFamilia>
+			<tipoDoc>86</tipoDoc>
+			<nroDoc>27464959551</nroDoc>
+			<apellido>FUKS CAMILA</apellido>
+			<nombre></nombre>
+			<fechaNac>2005-04-13</fechaNac>
+			<mesDesde>1</mesDesde>
+			<mesHasta>12</mesHasta>
+			<parentesco>3</parentesco>
+			<vigenteProximosPeriodos>S</vigenteProximosPeriodos>
+			<porcentajeDeduccion>100</porcentajeDeduccion>
+		</cargaFamilia>
+	</cargasFamilia>
+	<deducciones>
+		<deduccion tipo="1">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30684708836</nroDoc>
+			<denominacion>SISTEMA DE URGENCIAS DEL ROSAFE S.A.U.</denominacion>
+			<descBasica>30684708836 - SISTEMA DE URGENCIAS DEL ROSAFE S.A.U.</descBasica>
+			<montoTotal>55712.48</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="3" montoMensual="3358.85"/>
+				<periodo mesDesde="4" mesHasta="5" montoMensual="3795.5"/>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="4554.59"/>
+				<periodo mesDesde="7" mesHasta="7" montoMensual="4782.44"/>
+				<periodo mesDesde="8" mesHasta="9" montoMensual="5357.04"/>
+				<periodo mesDesde="10" mesHasta="12" montoMensual="5997.94"/>
+			</periodos>
+		</deduccion>
+	</deducciones>
+	<retPerPagos>
+		<retPerPago tipo="28">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30500010084</nroDoc>
+			<denominacion>BANCO MACRO SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30500010084 - BANCO MACRO SOCIEDAD ANONIMA</descBasica>
+			<montoTotal>17156.54</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="1" montoMensual="550.91"/>
+				<periodo mesDesde="2" mesHasta="2" montoMensual="1338.96"/>
+				<periodo mesDesde="3" mesHasta="3" montoMensual="469.23"/>
+				<periodo mesDesde="4" mesHasta="4" montoMensual="423.59"/>
+				<periodo mesDesde="5" mesHasta="5" montoMensual="467.38"/>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="1401.85"/>
+				<periodo mesDesde="7" mesHasta="7" montoMensual="1768.75"/>
+				<periodo mesDesde="8" mesHasta="8" montoMensual="3999.9"/>
+				<periodo mesDesde="9" mesHasta="9" montoMensual="3538.43"/>
+				<periodo mesDesde="10" mesHasta="10" montoMensual="1983.83"/>
+				<periodo mesDesde="11" mesHasta="11" montoMensual="608.26"/>
+				<periodo mesDesde="12" mesHasta="12" montoMensual="605.45"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+		<retPerPago tipo="28">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30500010912</nroDoc>
+			<denominacion>BANCO DE LA NACION ARGENTINA</denominacion>
+			<descBasica>30500010912 - BANCO DE LA NACION ARGENTINA</descBasica>
+			<montoTotal>2126.18</montoTotal>
+			<periodos>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="2126.18"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+		<retPerPago tipo="28">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30692432661</nroDoc>
+			<denominacion>NUEVO BANCO DE SANTA FE SA</denominacion>
+			<descBasica>30692432661 - NUEVO BANCO DE SANTA FE SA</descBasica>
+			<montoTotal>1452.94</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="1" montoMensual="215.78"/>
+				<periodo mesDesde="2" mesHasta="2" montoMensual="220.87"/>
+				<periodo mesDesde="3" mesHasta="3" montoMensual="226.68"/>
+				<periodo mesDesde="4" mesHasta="4" montoMensual="234.19"/>
+				<periodo mesDesde="5" mesHasta="5" montoMensual="243.94"/>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="125.87"/>
+				<periodo mesDesde="9" mesHasta="9" montoMensual="185.61"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+		<retPerPago tipo="29">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30500010084</nroDoc>
+			<denominacion>BANCO MACRO SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30500010084 - BANCO MACRO SOCIEDAD ANONIMA</descBasica>
+			<montoTotal>10334.42</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="1" montoMensual="454.95"/>
+				<periodo mesDesde="2" mesHasta="2" montoMensual="508.77"/>
+				<periodo mesDesde="3" mesHasta="3" montoMensual="350.95"/>
+				<periodo mesDesde="4" mesHasta="4" montoMensual="459.09"/>
+				<periodo mesDesde="5" mesHasta="5" montoMensual="457.05"/>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="726.94"/>
+				<periodo mesDesde="7" mesHasta="7" montoMensual="1076.82"/>
+				<periodo mesDesde="8" mesHasta="8" montoMensual="1143.61"/>
+				<periodo mesDesde="9" mesHasta="9" montoMensual="964.96"/>
+				<periodo mesDesde="10" mesHasta="10" montoMensual="1180.09"/>
+				<periodo mesDesde="11" mesHasta="11" montoMensual="1772.85"/>
+				<periodo mesDesde="12" mesHasta="12" montoMensual="1238.34"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+	</retPerPagos>
+</presentacion>

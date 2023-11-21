@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2022</periodo>
+	<nroPresentacion>1</nroPresentacion>
+	<fechaPresentacion>2023-01-25</fechaPresentacion>
+	<empleado>
+		<cuit>20376143113</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>MARQUEZ LOPEZ</apellido>
+		<nombre>GUSTAVO ANDRES</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5600</cp>
+			<localidad>SAN RAFAEL</localidad>
+			<calle>PERU</calle>
+			<nro>553</nro>
+		</direccion>
+	</empleado>
+	<retPerPagos>
+		<retPerPago tipo="28">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30500003193</nroDoc>
+			<denominacion>BANCO BBVA ARGENTINA S.A.</denominacion>
+			<descBasica>30500003193 - BANCO BBVA ARGENTINA S.A.</descBasica>
+			<montoTotal>205100.6</montoTotal>
+			<periodos>
+				<periodo mesDesde="4" mesHasta="4" montoMensual="42524.46"/>
+				<periodo mesDesde="5" mesHasta="5" montoMensual="73710.9"/>
+				<periodo mesDesde="12" mesHasta="12" montoMensual="88865.24"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+		<retPerPago tipo="28">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30715313886</nroDoc>
+			<denominacion>EBANX S.A.</denominacion>
+			<descBasica>30715313886 - EBANX S.A.</descBasica>
+			<montoTotal>1674.7</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="5" montoMensual="97.65"/>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="136.15"/>
+				<periodo mesDesde="7" mesHasta="12" montoMensual="175.05"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+	</retPerPagos>
+</presentacion>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2022</periodo>
+	<nroPresentacion>3</nroPresentacion>
+	<fechaPresentacion>2023-03-31</fechaPresentacion>
+	<empleado>
+		<cuit>20187871280</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>MARTINEZ</apellido>
+		<nombre>RICARDO DANIEL</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5500</cp>
+			<localidad>MENDOZA</localidad>
+			<calle>AGUSTIN DELGADO</calle>
+			<nro>262</nro>
+		</direccion>
+	</empleado>
+	<deducciones>
+		<deduccion tipo="3">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30662117273</nroDoc>
+			<denominacion>FONDO DE LAS NACIONES UNIDAS PARA LA INFANCIA UNICEF</denominacion>
+			<descBasica>30662117273 - FONDO DE LAS NACIONES UNIDAS PARA LA INFANCIA UNICEF</descBasica>
+			<montoTotal>6600</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="6" montoMensual="550"/>
+				<periodo mesDesde="7" mesHasta="7" montoMensual="1100"/>
+				<periodo mesDesde="8" mesHasta="11" montoMensual="550"/>
+			</periodos>
+		</deduccion>
+		<deduccion tipo="3">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30700456974</nroDoc>
+			<denominacion>FUNDACION CIMIENTOS</denominacion>
+			<descBasica>30700456974 - FUNDACION CIMIENTOS</descBasica>
+			<montoTotal>16834</montoTotal>
+			<periodos>
+				<periodo mesDesde="12" mesHasta="12" montoMensual="16834"/>
+			</periodos>
+		</deduccion>
+		<deduccion tipo="8">
+			<tipoDoc>86</tipoDoc>
+			<nroDoc>23262967204</nroDoc>
+			<denominacion>TRIGO ERICA LORENA</denominacion>
+			<descBasica>23262967204 - TRIGO ERICA LORENA</descBasica>
+			<montoTotal>395072.65</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="2" montoMensual="20276.78"/>
+				<periodo mesDesde="3" mesHasta="3" montoMensual="22027.09"/>
+				<periodo mesDesde="4" mesHasta="4" montoMensual="22902.25"/>
+				<periodo mesDesde="5" mesHasta="5" montoMensual="24950.10"/>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="42931.43"/>
+				<periodo mesDesde="7" mesHasta="7" montoMensual="28670.38"/>
+				<periodo mesDesde="8" mesHasta="8" montoMensual="31237.37"/>
+				<periodo mesDesde="9" mesHasta="9" montoMensual="34137.60"/>
+				<periodo mesDesde="10" mesHasta="10" montoMensual="36730.02"/>
+				<periodo mesDesde="11" mesHasta="11" montoMensual="39322.43"/>
+				<periodo mesDesde="12" mesHasta="12" montoMensual="71610.42"/>
+			</periodos>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>3877.17</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="1" montoMensual="3877.17"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>4836.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="2" mesHasta="2" montoMensual="4836.67"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>4836.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="3" mesHasta="3" montoMensual="4836.67"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>4836.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="4" mesHasta="4" montoMensual="4836.67"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>4836.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="5" mesHasta="5" montoMensual="4836.67"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>4836.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="6" mesHasta="6" montoMensual="4836.67"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>4836.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="7" mesHasta="7" montoMensual="4836.67"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>6541</montoTotal>
+			<periodos>
+				<periodo mesDesde="8" mesHasta="8" montoMensual="6541.00"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>6541</montoTotal>
+			<periodos>
+				<periodo mesDesde="9" mesHasta="9" montoMensual="6541.00"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>6541</montoTotal>
+			<periodos>
+				<periodo mesDesde="10" mesHasta="10" montoMensual="6541.00"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30582622945</nroDoc>
+			<denominacion>ERREPAR SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30582622945 - ERREPAR SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 20446257871 - MARTINEZ BUSTOS FABIO DANIEL - Hijo/a mayor de 18 y hasta 24 años (100%)</descAdicional>
+			<montoTotal>6541</montoTotal>
+			<periodos>
+				<periodo mesDesde="11" mesHasta="11" montoMensual="6541.00"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20446257871"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="MARTINEZ BUSTOS FABIO DANIEL"/>
+				<detalle nombre="parentescoFamiliar" valor="103"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+	</deducciones>
+	<retPerPagos>
+		<retPerPago tipo="28">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30500008454</nroDoc>
+			<denominacion>BANCO SANTANDER ARGENTINA SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30500008454 - BANCO SANTANDER ARGENTINA SOCIEDAD ANONIMA</descBasica>
+			<montoTotal>1013.67</montoTotal>
+			<periodos>
+				<periodo mesDesde="8" mesHasta="8" montoMensual="10651.63"/>
+				<periodo mesDesde="9" mesHasta="9" montoMensual="-9637.96"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoTarjeta" valor="0"/>
+			</detalles>
+		</retPerPago>
+	</retPerPagos>
+</presentacion>

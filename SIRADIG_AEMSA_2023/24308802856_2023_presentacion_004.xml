@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2023</periodo>
+	<nroPresentacion>4</nroPresentacion>
+	<fechaPresentacion>2023-04-04</fechaPresentacion>
+	<empleado>
+		<cuit>24308802856</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>BRIGI</apellido>
+		<nombre>LUIS DAMIAN</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5501</cp>
+			<localidad>GODOY CRUZ</localidad>
+			<calle>GENERAL GUTIERREZ</calle>
+			<nro>328</nro>
+		</direccion>
+	</empleado>
+	<cargasFamilia>
+		<cargaFamilia>
+			<tipoDoc>86</tipoDoc>
+			<nroDoc>23566960354</nroDoc>
+			<apellido>BRIGI</apellido>
+			<nombre>MICAELA EUGENIA</nombre>
+			<fechaNac>2017-12-08</fechaNac>
+			<mesDesde>1</mesDesde>
+			<mesHasta>12</mesHasta>
+			<parentesco>3</parentesco>
+			<vigenteProximosPeriodos>S</vigenteProximosPeriodos>
+			<porcentajeDeduccion>100</porcentajeDeduccion>
+		</cargaFamilia>
+		<cargaFamilia>
+			<tipoDoc>86</tipoDoc>
+			<nroDoc>27297106622</nroDoc>
+			<apellido>SUAREZ</apellido>
+			<nombre>NANCY BEATRIZ</nombre>
+			<fechaNac>1982-08-21</fechaNac>
+			<mesDesde>1</mesDesde>
+			<mesHasta>12</mesHasta>
+			<parentesco>1</parentesco>
+			<vigenteProximosPeriodos>S</vigenteProximosPeriodos>
+			<porcentajeDeduccion>100</porcentajeDeduccion>
+		</cargaFamilia>
+	</cargasFamilia>
+	<deducciones>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30708383348</nroDoc>
+			<denominacion>EURO SA</denominacion>
+			<descBasica>30708383348 - EURO SA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 23566960354 - BRIGI, MICAELA EUGENIA - Hijo/a menor de 18 años (100%)</descAdicional>
+			<montoTotal>10979.55</montoTotal>
+			<periodos>
+				<periodo mesDesde="2" mesHasta="2" montoMensual="10979.55"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="23566960354"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="BRIGI, MICAELA EUGENIA"/>
+				<detalle nombre="parentescoFamiliar" valor="3"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30711390282</nroDoc>
+			<denominacion>FUNDACION ESCUELA INTELIGENTE</denominacion>
+			<descBasica>30711390282 - FUNDACION ESCUELA INTELIGENTE</descBasica>
+			<descAdicional>Servicios con fines educativos - Familiar: CUIL 23566960354 - BRIGI, MICAELA EUGENIA - Hijo/a menor de 18 años (100%)</descAdicional>
+			<montoTotal>43000</montoTotal>
+			<periodos>
+				<periodo mesDesde="3" mesHasta="3" montoMensual="43000.00"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="1"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="23566960354"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="BRIGI, MICAELA EUGENIA"/>
+				<detalle nombre="parentescoFamiliar" valor="3"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>33711451329</nroDoc>
+			<denominacion>KADIMA SOCIEDAD ANONIMA</denominacion>
+			<descBasica>33711451329 - KADIMA SOCIEDAD ANONIMA</descBasica>
+			<descAdicional>Herramientas educativas - Familiar: CUIL 23566960354 - BRIGI, MICAELA EUGENIA - Hijo/a menor de 18 años (100%)</descAdicional>
+			<montoTotal>4604.66</montoTotal>
+			<periodos>
+				<periodo mesDesde="2" mesHasta="2" montoMensual="4604.66"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="2"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="23566960354"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="BRIGI, MICAELA EUGENIA"/>
+				<detalle nombre="parentescoFamiliar" valor="3"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+	</deducciones>
+</presentacion>

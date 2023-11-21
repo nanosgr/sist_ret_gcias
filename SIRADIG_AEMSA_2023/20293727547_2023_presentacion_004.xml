@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2023</periodo>
+	<nroPresentacion>4</nroPresentacion>
+	<fechaPresentacion>2023-04-04</fechaPresentacion>
+	<empleado>
+		<cuit>20293727547</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>GIORLANDO</apellido>
+		<nombre>LUIS EDUARDO</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5525</cp>
+			<localidad>RODEO DE LA CRUZ</localidad>
+			<calle>LOS GUINDOS</calle>
+			<nro>7564</nro>
+		</direccion>
+	</empleado>
+	<deducciones>
+		<deduccion tipo="24">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30624259269</nroDoc>
+			<denominacion>SAN CRISTOBAL SEGURO DE RETIRO SOCIEDAD ANONIMA</denominacion>
+			<descBasica>30624259269 - SAN CRISTOBAL SEGURO DE RETIRO SOCIEDAD ANONIMA</descBasica>
+			<montoTotal>8000</montoTotal>
+			<periodos>
+				<periodo mesDesde="1" mesHasta="4" montoMensual="2000"/>
+			</periodos>
+		</deduccion>
+	</deducciones>
+</presentacion>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2022</periodo>
+	<nroPresentacion>1</nroPresentacion>
+	<fechaPresentacion>2023-03-14</fechaPresentacion>
+	<empleado>
+		<cuit>20208104528</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>GOMEZ</apellido>
+		<nombre>GERARDO ANIBAL</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5521</cp>
+			<localidad>VILLANUEVA</localidad>
+			<calle>R  ROSSSO</calle>
+			<nro>1129</nro>
+		</direccion>
+	</empleado>
+	<cargasFamilia>
+		<cargaFamilia>
+			<tipoDoc>86</tipoDoc>
+			<nroDoc>20533158820</nroDoc>
+			<apellido>GOMEZ ARIOSTO</apellido>
+			<nombre>PEDRO</nombre>
+			<fechaNac>2013-11-02</fechaNac>
+			<mesDesde>1</mesDesde>
+			<mesHasta>12</mesHasta>
+			<parentesco>3</parentesco>
+			<vigenteProximosPeriodos>S</vigenteProximosPeriodos>
+			<porcentajeDeduccion>100</porcentajeDeduccion>
+		</cargaFamilia>
+	</cargasFamilia>
+	<deducciones>
+		<deduccion tipo="32">
+			<tipoDoc>80</tipoDoc>
+			<nroDoc>30533299349</nroDoc>
+			<denominacion>ASOCIACION ESCUELAS ITALIANAS</denominacion>
+			<descBasica>30533299349 - ASOCIACION ESCUELAS ITALIANAS</descBasica>
+			<descAdicional>Servicios con fines educativos - Familiar: CUIL 20533158820 - GOMEZ ARIOSTO, PEDRO - Hijo/a menor de 18 años (100%)</descAdicional>
+			<montoTotal>47134</montoTotal>
+			<periodos>
+				<periodo mesDesde="12" mesHasta="12" montoMensual="47134.00"/>
+			</periodos>
+			<detalles>
+				<detalle nombre="tipoGasto" valor="1"/>
+				<detalle nombre="tipoDocFamiliar" valor="86"/>
+				<detalle nombre="numeroDocFamiliar" valor="20533158820"/>
+				<detalle nombre="apellidoNombreFamiliar" valor="GOMEZ ARIOSTO, PEDRO"/>
+				<detalle nombre="parentescoFamiliar" valor="3"/>
+				<detalle nombre="porcentajeDedFamiliar" valor="100"/>
+			</detalles>
+		</deduccion>
+	</deducciones>
+</presentacion>

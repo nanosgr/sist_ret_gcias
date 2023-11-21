@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://siradig.afip.gob.ar/presentacion" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://siradig.afip.gob.ar/presentacion">
+
+    <element name="presentacion" type="tns:PresentacionType"></element>
+    
+    <complexType name="PresentacionType">
+    	<sequence>
+    		<element name="periodo" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nroPresentacion" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="fechaPresentacion" type="date" maxOccurs="1" minOccurs="1"></element>
+    		<element name="empleado" type="tns:EmpleadoType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="cargasFamilia" type="tns:ArrayCargasFamiliaType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ganLiqOtrosEmpEnt" type="tns:ArrayOtrosEmpEntType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="deducciones" type="tns:ArrayDeduccionesType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="retPerPagos" type="tns:ArrayRetPerPagosType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ajustes" type="tns:ArrayAjustesType" maxOccurs="1" minOccurs="0"></element>
+            <element name="datosAdicionales" type="tns:ArrayDatosAdicionalesType" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="EmpleadoType">
+    	<sequence>
+    		<element name="cuit" type="tns:CUITSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="tipoDoc" type="tns:TipoDocSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="apellido" type="tns:ApellidoNombreSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nombre" type="tns:ApellidoNombreSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="direccion" type="tns:DireccionType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="CUITSimpleType">
+    	<restriction base="long">
+    		<minExclusive value="9999999999"></minExclusive>
+    		<maxInclusive value="99999999999"></maxInclusive>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="TipoDocSimpleType">
+    	<restriction base="short">
+    		<maxInclusive value="99"></maxInclusive>
+    		<minInclusive value="1"></minInclusive>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="DireccionType">
+    	<sequence>
+    		<element name="provincia" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="cp" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="localidad" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="calle" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nro" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="piso" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="dpto" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="ApellidoNombreSimpleType">
+    	<restriction base="string">
+    		<maxLength value="50"></maxLength>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="ArrayCargasFamiliaType">
+    	<sequence>
+    		<element name="cargaFamilia" type="tns:CargaFamiliaType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="CargaFamiliaType">
+    	<sequence>
+    		<element name="tipoDoc" type="tns:TipoDocSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nroDoc" type="tns:NroDocSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="apellido" type="tns:ApellidoNombreSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nombre" type="tns:ApellidoNombreSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="fechaNac" type="date" maxOccurs="1" minOccurs="1"></element>
+    		<element name="mesDesde" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="mesHasta" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="parentesco" type="short" maxOccurs="1" minOccurs="1"></element>
+            <element name="vigenteProximosPeriodos" type="tns:SiNoSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="fechaLimite" type="date" maxOccurs="1" minOccurs="0"></element>
+    		<element name="porcentajeDeduccion" type="short" maxOccurs="1" minOccurs="0"></element>
+        </sequence>
+    </complexType>
+
+    <complexType name="ArrayOtrosEmpEntType">
+    	<sequence>
+    		<element name="empEnt" type="tns:EmpleadorEntidadType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="EmpleadorEntidadType">
+    	<sequence>
+    		<element name="cuit" type="tns:CUITSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="denominacion" type="tns:DenominacionSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="ingresosAportes" type="tns:ArrayIngresosAportesType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ArrayIngresosAportesType">
+    	<sequence>
+    		<element name="ingAp" type="tns:IngresoAporteType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="IngresoAporteType">
+    	<sequence>
+    		<element name="obraSoc" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="segSoc" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="sind" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ganBrut" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="retGan" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="retribNoHab" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ajuste" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="exeNoAlc" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="sac" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="horasExtGr" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="horasExtEx" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="matDid" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="gastosMovViat" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="bonosProd" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="fallosCaja" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+            <element name="conSimNat" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+            <element name="remunExentaLey27549" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="suplemParticLey19101" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="teletrabajoExento" type="tns:ImportePNSimpleType" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="mes" type="string"></attribute>
+    </complexType>
+
+    <simpleType name="ImporteSimpleType">
+    	<restriction base="decimal">
+    		<maxInclusive value="9999999999999.99"></maxInclusive>
+    		<minInclusive value="0"></minInclusive>
+    	</restriction>
+    </simpleType>
+    
+    <simpleType name="ImportePNSimpleType">
+    	<restriction base="decimal">
+    		<minInclusive value="-9999999999999.99"></minInclusive>
+    		<maxInclusive value="9999999999999.99"></maxInclusive>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="ArrayDeduccionesType">
+    	<sequence>
+    		<element name="deduccion" type="tns:ConceptoType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ConceptoType">
+    	<sequence>
+    		<element name="tipoDoc" type="tns:TipoDocSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="nroDoc" type="tns:NroDocSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="denominacion" type="tns:DenominacionSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="descBasica" type="tns:DescripcionSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="descAdicional" type="tns:DescripcionSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="montoTotal" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="1"></element>
+            <element name="periodos" type="tns:ArrayPeriodosType" maxOccurs="1" minOccurs="0"></element>
+            <element name="detalles" type="tns:ArrayDetallesType" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="tipo" type="string"></attribute>
+    </complexType>
+
+    <complexType name="ArrayDetallesType">
+    	<sequence>
+    		<element name="detalle" type="tns:DetalleType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="DetalleType">
+    	<attribute name="nombre" type="string"></attribute>
+    	<attribute name="valor" type="string"></attribute>
+    </complexType>
+
+    <complexType name="ArrayPeriodosType">
+    	<sequence>
+    		<element name="periodo" type="tns:PeriodoType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="PeriodoType">
+    	<attribute name="mesDesde" type="string"></attribute>
+    	<attribute name="mesHasta" type="string"></attribute>
+    	<attribute name="montoMensual" type="string"></attribute>
+    </complexType>
+
+    <complexType name="ArrayRetPerPagosType">
+    	<sequence>
+    		<element name="retPerPago" type="tns:ConceptoType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ArrayAjustesType">
+    	<sequence>
+    		<element name="ajuste" type="tns:AjusteType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="AjusteType">
+    	<sequence>
+            <element name="cuit" type="tns:CUITSimpleType" maxOccurs="1" minOccurs="0"></element>
+            <element name="denominacion" type="tns:DenominacionSimpleType" maxOccurs="1" minOccurs="0"></element>
+            <element name="descBasica" type="tns:DescripcionSimpleType" maxOccurs="1" minOccurs="1"></element>
+            <element name="descAdicional" type="tns:DescripcionSimpleType" maxOccurs="1" minOccurs="0"></element>
+            <element name="montoTotal" type="tns:ImporteSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="detalles" type="tns:ArrayDetallesType" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="tipo" type="string"></attribute>
+    </complexType>
+
+    <complexType name="ArrayDatosAdicionalesType">
+    	<sequence>
+    		<element name="datoAdicional" type="tns:DatoAdicionalType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="DatoAdicionalType">
+    	<attribute name="nombre" type="string"></attribute>
+    	<attribute name="mesDesde" type="string"></attribute>
+    	<attribute name="mesHasta" type="string"></attribute>
+    	<attribute name="valor" type="string"></attribute>
+    </complexType>
+
+    <simpleType name="DescripcionSimpleType">
+    	<restriction base="string">
+    		<maxLength value="300"></maxLength>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="DenominacionSimpleType">
+    	<restriction base="string">
+    		<maxLength value="200"></maxLength>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="NroDocSimpleType">
+    	<restriction base="string">
+    		<maxLength value="11"></maxLength>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="SiNoSimpleType">
+    	<restriction base="string">
+    		<enumeration value="S"></enumeration>
+    		<enumeration value="N"></enumeration>
+    	</restriction>
+    </simpleType>
+</schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2022</periodo>
+	<nroPresentacion>1</nroPresentacion>
+	<fechaPresentacion>2023-03-28</fechaPresentacion>
+	<empleado>
+		<cuit>20334616887</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>ALVAREZ BULFON</apellido>
+		<nombre>FEDERICO NICOLAS</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5539</cp>
+			<localidad>LAS HERAS</localidad>
+			<calle>CAZEROS</calle>
+			<nro>341</nro>
+		</direccion>
+	</empleado>
+	<cargasFamilia>
+		<cargaFamilia>
+			<tipoDoc>86</tipoDoc>
+			<nroDoc>20576155876</nroDoc>
+			<apellido>ALVAREZ OCHOA</apellido>
+			<nombre>AGUSTIN FEDERICO</nombre>
+			<fechaNac>2019-08-09</fechaNac>
+			<mesDesde>1</mesDesde>
+			<mesHasta>12</mesHasta>
+			<parentesco>3</parentesco>
+			<vigenteProximosPeriodos>S</vigenteProximosPeriodos>
+			<porcentajeDeduccion>100</porcentajeDeduccion>
+		</cargaFamilia>
+	</cargasFamilia>
+</presentacion>

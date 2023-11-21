@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+	<periodo>2023</periodo>
+	<nroPresentacion>4</nroPresentacion>
+	<fechaPresentacion>2023-04-04</fechaPresentacion>
+	<empleado>
+		<cuit>20293181285</cuit>
+		<tipoDoc>80</tipoDoc>
+		<apellido>CUSSINO</apellido>
+		<nombre>MARCELO</nombre>
+		<direccion>
+			<provincia>7</provincia>
+			<cp>5519</cp>
+			<localidad>GUAYMALLEN</localidad>
+			<calle>FRANCISCO ALVAREZ</calle>
+			<nro>2066</nro>
+			<piso>0</piso>
+			<dpto>2</dpto>
+		</direccion>
+	</empleado>
+</presentacion>

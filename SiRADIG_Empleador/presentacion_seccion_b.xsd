@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://siradig.afip.gob.ar/presentacion_seccion_b" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://siradig.afip.gob.ar/presentacion_seccion_b">
+
+    <element name="presentacion" type="tns:PresentacionBType"></element>
+    
+    <complexType name="PresentacionBType">
+    	<sequence>
+    		<element name="periodo" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nroPresentacion" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="fechaPresentacion" type="date" maxOccurs="1" minOccurs="1"></element>
+    		<element name="empleado" type="tns:EmpleadoType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="agenteRetencion" type="tns:AgenteRetencionType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="EmpleadoType">
+    	<sequence>
+    		<element name="cuit" type="tns:CUITSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="tipoDoc" type="tns:TipoDocSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="apellido" type="tns:ApellidoNombreSimpleType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nombre" type="tns:ApellidoNombreSimpleType" maxOccurs="1" minOccurs="0"></element>
+    		<element name="direccion" type="tns:DireccionType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="CUITSimpleType">
+    	<restriction base="long">
+    		<minExclusive value="9999999999"></minExclusive>
+    		<maxInclusive value="99999999999"></maxInclusive>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="TipoDocSimpleType">
+    	<restriction base="short">
+    		<maxInclusive value="99"></maxInclusive>
+    		<minInclusive value="1"></minInclusive>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="DireccionType">
+    	<sequence>
+    		<element name="provincia" type="short" maxOccurs="1" minOccurs="1"></element>
+    		<element name="cp" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="localidad" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="calle" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nro" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="piso" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="dpto" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="ApellidoNombreSimpleType">
+    	<restriction base="string">
+    		<maxLength value="50"></maxLength>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="DenominacionSimpleType">
+    	<restriction base="string">
+    		<maxLength value="200"></maxLength>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="AgenteRetencionType">
+    	<sequence>
+    		<element name="cuit" type="tns:CUITSimpleType"></element>
+    		<element name="denominacion" type="tns:DenominacionSimpleType"></element>
+    	</sequence>
+    </complexType>
+</schema>
