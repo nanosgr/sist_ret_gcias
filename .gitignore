@@ -131,7 +131,8 @@ ENV/
 env.bak/
 venv.bak/
 .idea/
-sql_app/*
+./sql_app/
+./sql_app/*
 
 # Spyder project settings
 .spyderproject
