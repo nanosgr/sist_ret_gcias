@@ -1,0 +1,90 @@
+<!-- Este es el request que se envía al servidor de afip -->
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header/>
+	<soap:Body>
+		<FECAESolicitar xmlns="http://ar.gov.afip.dif.FEV1/">
+			<Auth>
+				<Token>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgc3JjPSJDTj13c2FhLCBPPUFGSVAsIEM9QVIsIFNFUklBTE5VTUJFUj1DVUlUIDMzNjkzNDUwMjM5IiBkc3Q9IkNOPXdzZmUsIE89QUZJUCwgQz1BUiIgdW5pcXVlX2lkPSIzMTAwNjk4MjM0IiBnZW5fdGltZT0iMTY5Nzg0MzY4MSIgZXhwX3RpbWU9IjE2OTc4ODY5NDEiLz4KICAgIDxvcGVyYXRpb24gdHlwZT0ibG9naW4iIHZhbHVlPSJncmFudGVkIj4KICAgICAgICA8bG9naW4gZW50aXR5PSIzMzY5MzQ1MDIzOSIgc2VydmljZT0id3NmZSIgdWlkPSJTRVJJQUxOVU1CRVI9Q1VJVCAzMzcxNjAxMDMzOSwgQ049b2Rvb216YSIgYXV0aG1ldGhvZD0iY21zIiByZWdtZXRob2Q9IjIyIj4KICAgICAgICAgICAgPHJlbGF0aW9ucz4KICAgICAgICAgICAgICAgIDxyZWxhdGlvbiBrZXk9IjMzNzE2MDEwMzM5IiByZWx0eXBlPSI0Ii8+CiAgICAgICAgICAgIDwvcmVsYXRpb25zPgogICAgICAgIDwvbG9naW4+CiAgICA8L29wZXJhdGlvbj4KPC9zc28+Cg==</Token>
+				<Sign>Si6TZcMrEjKJDfynsye9eOyoOaW9CIA0q9kfqSbDnwsOuktosNflWaS3xXrnM4pOkssmhn8BmzON9xHmZFjXbF1a02Tng4tiXzuLhbS4VykHNKmu8F0RpGx5d790TX8VBKHpb6a2tdjA79/HATiYeiXO7/ZbhM27/tl1K1zFdy4=</Sign>
+				<Cuit>33716010339</Cuit>
+			</Auth>
+			<FeCAEReq>
+				<FeCabReq>
+					<CantReg>1</CantReg>
+					<PtoVta>4</PtoVta>
+					<CbteTipo>6</CbteTipo>
+				</FeCabReq>
+				<FeDetReq>
+					<FECAEDetRequest>
+						<Concepto>2</Concepto>
+						<DocTipo>96</DocTipo>
+						<DocNro>11264541</DocNro>
+						<CbteDesde>858</CbteDesde>
+						<CbteHasta>858</CbteHasta>
+						<CbteFch>20231020</CbteFch>
+						<ImpTotal>85000.00</ImpTotal>
+						<ImpTotConc>0.00</ImpTotConc>
+						<ImpNeto>70247.93</ImpNeto>
+						<ImpOpEx>0.00</ImpOpEx>
+						<ImpTrib>0.00</ImpTrib>
+						<ImpIVA>14752.07</ImpIVA>
+						<FchServDesde>20231001</FchServDesde>
+						<FchServHasta>20231031</FchServHasta>
+						<FchVtoPago>20231020</FchVtoPago>
+						<MonId>PES</MonId>
+						<MonCotiz>1.0</MonCotiz>
+						<Iva>
+							<AlicIva>
+								<Id>5</Id>
+								<BaseImp>70247.93</BaseImp>
+								<Importe>14752.07</Importe>
+							</AlicIva>
+						</Iva>
+					</FECAEDetRequest>
+				</FeDetReq>
+			</FeCAEReq>
+		</FECAESolicitar>
+	</soap:Body>
+</soap:Envelope>
+
+<!-- Esta es la respuesta del servidor de afip -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Header>
+		<FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
+			<ambiente>Produccion - Coa</ambiente>
+			<fecha>2023-10-20T20:15:42.4681323-03:00</fecha>
+			<id>5.2.1.0</id>
+		</FEHeaderInfo>
+	</soap:Header>
+	<soap:Body>
+		<FECAESolicitarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+			<FECAESolicitarResult>
+				<FeCabResp>
+					<Cuit>33716010339</Cuit>
+					<PtoVta>4</PtoVta>
+					<CbteTipo>6</CbteTipo>
+					<FchProceso>20231020201542</FchProceso>
+					<CantReg>1</CantReg>
+					<Resultado>A</Resultado>
+					<Reproceso>N</Reproceso>
+				</FeCabResp>
+				<FeDetResp>
+					<FECAEDetResponse>
+						<Concepto>2</Concepto>
+						<DocTipo>96</DocTipo>
+						<DocNro>11264541</DocNro>
+						<CbteDesde>858</CbteDesde>
+						<CbteHasta>858</CbteHasta>
+						<CbteFch>20231020</CbteFch>
+						<Resultado>A</Resultado>
+						<CAE>73429288969482</CAE>
+						<CAEFchVto>20231030</CAEFchVto>
+					</FECAEDetResponse>
+				</FeDetResp>
+			</FECAESolicitarResult>
+		</FECAESolicitarResponse>
+	</soap:Body>
+</soap:Envelope>
