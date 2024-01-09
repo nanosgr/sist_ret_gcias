@@ -34,6 +34,7 @@ def analisis_pasajeros(comprobante: dict, wsPasajeros: openpyxl.worksheet):
     for i in range(2, wsPasajeros.max_row + 1):
         comprobante_pasajero = wsPasajeros.cell(column=11, row=i).value
         pago_apropiado = comprobante['px_unitario']
+
         if not comprobante_pasajero.find(comprobante['comprobante']) and comprobante['cantidad_pasajeros'] > 0:
             # Con los datos del diccionario comprobante, buscamos para cada uno de los pasajeros 
             # la apropiación de los pagos, y actualizamos la hoja wsPasajeros
