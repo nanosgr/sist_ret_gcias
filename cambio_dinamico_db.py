@@ -2,7 +2,8 @@ from datetime import date
 from enum import Enum
 from decimal import Decimal
 from typing import Optional, List
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Header
+from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel, Field
 from sqlalchemy import create_engine, Column, Integer, String, BLOB, Date, Boolean, Float
 from sqlalchemy.ext.declarative import declarative_base
@@ -32,7 +33,41 @@ class Liquidacion(Enum):
     M = 'MENSUAL'
     Q = 'QUINCENA'
 
+def custom_openapi():
+    header = {
+            "required": True,
+            "schema": {
+              "title": "X-Database-Name",
+              "type": "string"
+            },
+            "name": "X-Database-Name",
+            "in": "header"
+          }
+    if app.openapi_schema:
+        return app.openapi_schema
+    openapi_schema = get_openapi(
+        title="Custom title",
+        version="2.5.0",
+        description="This is a very custom OpenAPI schema",
+        routes=app.routes,
+    )
+    openapi_schema["info"]["x-logo"] = {
+        "url": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+    }
+    app.openapi_schema = openapi_schema
+
+    paths = openapi_schema["paths"]
+    for url, methods in paths.items():
+        for method in methods:
+            if methods[method].get("parameters"):
+                methods[method]["parameters"].append(header)
+            else:
+                methods[method]["parameters"] = [header]
+
+    return app.openapi_schema
+
 app = FastAPI()
+app.openapi = custom_openapi
 
 # Define the base database connection string
 DATABASE_URL_TEMPLATE = "mysql+pymysql://root:root@192.168.24.121/{db_name}"
